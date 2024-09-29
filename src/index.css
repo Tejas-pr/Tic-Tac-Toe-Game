@@ -1,0 +1,202 @@
+body {
+    background-image: url('../images/background.gif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board-row {
+    display: flex;
+}
+
+.headding-h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 32px; 
+}
+
+.status{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: bisque;
+    font-family: "Press Start 2P", system-ui;
+    font-size: 15px;    
+}
+
+.square {
+    width: 100px;
+    height: 100px;
+    border: 2px solid black;
+    font-family: "Press Start 2P", system-ui;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    user-select: none;
+    border-radius: 15px;
+    transition: transform 0.6s ease;
+}
+
+.square:hover{
+    transform: scale(0.9);
+    background-color: rgba(255, 255, 255, 0.728);
+}
+
+.play-again-btn {
+    font-family: "Open Sans", sans-serif;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #000;
+    cursor: pointer;
+    border: 3px solid;
+    padding: 0.25em 0.5em;
+    box-shadow: 1px 1px 0px 0px, 2px 2px 0px 0px, 3px 3px 0px 0px, 4px 4px 0px 0px, 5px 5px 0px 0px;
+    position: relative;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+.play-again-btn:active{
+    box-shadow: 0px 0px 0px 0px;
+    top: 5px;
+    left: 5px;
+}
+
+.game-info{
+    display: flex;
+    
+}
+
+.listofmoves{
+    display: flex;
+    flex-direction: row;
+}
+
+.moves-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.listofmoves {
+    margin: 5px;
+}
+
+.button-55 {
+  align-self: center;
+  background-color: #ffffff7d;
+  background-image: none;
+  background-position: 0 90%;
+  background-repeat: repeat no-repeat;
+  background-size: 4px 3px;
+  border-radius: 15px 225px 255px 15px 15px 255px 225px 15px;
+  border-style: solid;
+  border-width: 2px;
+  box-shadow: rgba(0, 0, 0, .2) 15px 28px 25px -18px;
+  box-sizing: border-box;
+  color: #41403e;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Press Start 2P", system-ui;
+  font-size: 0.7rem;
+  line-height: 23px;
+  outline: none;
+  padding: .50rem;
+  text-decoration: none;
+  transition: all 235ms ease-in-out;
+  border-bottom-left-radius: 15px 255px;
+  border-bottom-right-radius: 225px 15px;
+  border-top-left-radius: 255px 15px;
+  border-top-right-radius: 15px 225px;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.button-55:hover {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 8px -5px;
+  transform: translate3d(0, 2px, 0);
+}
+
+.button-55:focus {
+  box-shadow: rgba(0, 0, 0, .3) 2px 8px 4px -6px;
+}
+
+
+@media (max-width: 1200px) {
+
+    .square {
+        width: 90px;
+        height: 90px;
+    }
+
+    .headding-h1 {
+        font-size: 30px;
+    }
+}
+
+@media (max-width: 900px) {
+
+    .square {
+        width: 80px;
+        height: 80px;
+        font-size: 20px;
+    }
+
+    .headding-h1 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 600px) {
+
+    .square {
+    width: 60px;
+    height: 60px;
+    font-size: 18px;
+    }
+
+    .headding-h1 {
+    font-size: 24px;
+    }
+}
+
+@media (max-width: 400px) {
+    .square {
+        width: 50px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    .headding-h1 {
+        font-size: 20px;
+    }
+}
+
+@media (min-width: 768px) {
+  .play-again-btn {
+    padding: 0.25em 0.75em;
+  }
+}
